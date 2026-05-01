@@ -7,17 +7,16 @@ import PricingIconThree from "../assets/pricing3.png";
 
 const Pricing = () => {
   return (
-    <section className="py-[100px]">
-      <div className="w-[1320px] mx-auto">
-        <div className="text-center flex flex-col items-center gap-y-[38px]">
-          <h2 className="font-chivo font-bold text-[46px]/[58px] text-primary w-[624px]">
+    <section className="py-14 sm:py-20 lg:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center flex flex-col items-center gap-y-6 sm:gap-y-8">
+          <h2 className="font-chivo font-bold text-[28px]/[1.2] sm:text-[36px]/[1.2] lg:text-[46px]/[58px] text-primary max-w-2xl">
             Easily integrate with your favorite apps
           </h2>
-          <div className="flex items-center gap-x-[24px]">
+          <div className="flex items-center gap-x-4 sm:gap-x-6">
             <span className="cursor-pointer">
               <h6
-                className="font-chivo font-bold text-[24px] text-primary 
-              hover:text-secondary transition duration-300 ease-in-out "
+                className="font-chivo font-bold text-[16px] sm:text-[18px] lg:text-[24px] text-primary hover:text-secondary transition duration-300 ease-in-out"
               >
                 Monthly
               </h6>
@@ -27,15 +26,14 @@ const Pricing = () => {
             </span>
             <span className="cursor-pointer">
               <h6
-                className="font-chivo font-bold text-[24px] text-primary 
-              hover:text-secondary transition duration-300 ease-in-out "
+                className="font-chivo font-bold text-[16px] sm:text-[18px] lg:text-[24px] text-primary hover:text-secondary transition duration-300 ease-in-out"
               >
                 Yearly
               </h6>
             </span>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-x-[30px] pt-[70px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-x-[30px] pt-10 sm:pt-14 lg:pt-16">
           <div>
             <PricingCard
               src={PricingIconOne}

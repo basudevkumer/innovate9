@@ -10,17 +10,22 @@ import Button from "./Button";
 
 const Feature = () => {
   return (
-    <section className="pb-[55px]">
-      <div className="w-[1320px] mx-auto">
-        <div className="grid grid-cols-2 gap-x-[160px]">
-          <div className="">
-            <img src={FeatureOne} alt="FeatureOne" />
+    <section className="py-14 sm:py-20 lg:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-16 items-center">
+          <div className="order-2 lg:order-1">
+            <img
+              src={FeatureOne}
+              alt="FeatureOne"
+              className="w-full h-auto object-cover"
+            />
           </div>
           <div>
-            <h2 className="pb-[64px]">
+            {/* Important: ensure consistent typography scaling */}
+            <h2 className="font-chivo font-bold text-[28px]/[1.2] sm:text-[36px]/[1.2] lg:text-[46px]/[58px] text-primary pb-8 sm:pb-10 lg:pb-16">
               We provide features for your Business
             </h2>
-            <div className="grid grid-cols-2 gap-x-[70px] gap-y-[40px]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 lg:gap-x-16 gap-y-8 lg:gap-y-10">
               <div className="">
                 <FeatureCard
                   icon={<HiRocketLaunch />}

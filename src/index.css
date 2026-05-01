@@ -3,6 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* Important: prevent accidental horizontal scrolling on small screens */
+html,
+body {
+  overflow-x: hidden;
+}
+
 
 
 /* coustom theme */
@@ -24,27 +30,27 @@
   --animate-runThree: leftRightThree 2s infinite ease-in-out;
   
   @keyframes leftRight {
-    0%{
-      left:50px,
+    0% {
+      left: 50px;
     }
-    50%{
-      left:0
+    50% {
+      left: 0;
     }
   }
   @keyframes leftRightTwo {
-    0%{
-      left:100px,
+    0% {
+      left: 100px;
     }
-    50%{
-      left:0
+    50% {
+      left: 0;
     }
   }
   @keyframes leftRightThree {
-    0%{
-      left:150px,
+    0% {
+      left: 150px;
     }
-    50%{
-      left:0
+    50% {
+      left: 0;
     }
   }
 

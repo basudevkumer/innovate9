@@ -10,7 +10,8 @@ const ToggleButton = () => {
       <Switch
         checked={enabled}
         onChange={setEnabled}
-        className="group relative flex h-7 w-17 cursor-pointer rounded-full bg-quaternary p-1 ease-in-out focus:not-data-focus:outline-none data-checked:bg-quaternary data-focus:outline data-focus:outline-white"
+        // Important: use valid Tailwind sizing across breakpoints
+        className="group relative flex h-7 w-16 cursor-pointer rounded-full bg-quaternary p-1 ease-in-out focus:not-data-focus:outline-none data-checked:bg-quaternary data-focus:outline data-focus:outline-white"
       >
         <span
           aria-hidden="true"

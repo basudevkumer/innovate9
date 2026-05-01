@@ -7,19 +7,19 @@ import PlatformThree from "../assets/platform3.png";
 
 const Platform = () => {
   return (
-    <section className="pb-[160px] pt-[290px]">
-      <div className="w-[1320px] mx-auto">
-        <div className="flex justify-between">
-          <h2 className="font-chivo font-bold text-[46px]/[58px] text-primary w-[504px]">
+    <section className="py-14 sm:py-20 lg:py-28">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 lg:gap-10">
+          <h2 className="font-chivo font-bold text-[28px]/[1.2] sm:text-[36px]/[1.2] lg:text-[46px]/[58px] text-primary max-w-xl">
             How simple is it to use our platform?
           </h2>
-          <p className="font-dmsans font-normal text-[18px]/[32px] text-secondary w-[540px] ">
+          <p className="font-dmsans font-normal text-[14px]/[24px] sm:text-[16px]/[28px] lg:text-[18px]/[32px] text-secondary max-w-2xl">
             This Innovate Con guide explores the most popular platforms and
             walks you through how to use them to grow your business.
           </p>
         </div>
-        <div className="pt-[116px] grid grid-cols-3 gap-x-[190px]">
-          <div>
+        <div className="pt-10 sm:pt-14 lg:pt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
+          <div className="h-full">
             <PlatformCard
               src={PlatformOne}
               heading={"Login or sign up to be able use our platform "}
@@ -28,7 +28,7 @@ const Platform = () => {
               }
             />
           </div>
-          <div>
+          <div className="h-full">
             <PlatformCard
               src={PlatformTwo}
               heading={"Connect your website with just a few click"}
@@ -37,7 +37,7 @@ const Platform = () => {
               }
             />
           </div>
-          <div>
+          <div className="h-full">
             <PlatformCard
               src={PlatformThree}
               heading={"Take some sales data that you want "}
