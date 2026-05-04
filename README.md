@@ -94,7 +94,7 @@ Make sure you have installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/innovate9.git
+   https://github.com/basudevkumer/innovate9.git
    cd innovate9
    ```
 
